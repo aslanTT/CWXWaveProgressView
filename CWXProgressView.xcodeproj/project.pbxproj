@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE95CD5B1B3953300015E4ED /* CWXProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95CD531B3953300015E4ED /* CWXProgressView.m */; };
+		BE95CD5C1B3953300015E4ED /* CWXProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95CD541B3953300015E4ED /* CWXProgressView.xib */; };
+		BE95CD5D1B3953300015E4ED /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95CD571B3953300015E4ED /* UIViewAdditions.m */; };
+		BE95CD5E1B3953300015E4ED /* CWXWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95CD5A1B3953300015E4ED /* CWXWaveView.m */; };
 		BEDECF711B3581830088C2C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDECF701B3581830088C2C8 /* main.m */; };
 		BEDECF741B3581830088C2C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDECF731B3581830088C2C8 /* AppDelegate.m */; };
 		BEDECF771B3581830088C2C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDECF761B3581830088C2C8 /* ViewController.m */; };
@@ -27,6 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE95CD521B3953300015E4ED /* CWXProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWXProgressView.h; sourceTree = "<group>"; };
+		BE95CD531B3953300015E4ED /* CWXProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWXProgressView.m; sourceTree = "<group>"; };
+		BE95CD541B3953300015E4ED /* CWXProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWXProgressView.xib; sourceTree = "<group>"; };
+		BE95CD561B3953300015E4ED /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		BE95CD571B3953300015E4ED /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		BE95CD591B3953300015E4ED /* CWXWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWXWaveView.h; sourceTree = "<group>"; };
+		BE95CD5A1B3953300015E4ED /* CWXWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWXWaveView.m; sourceTree = "<group>"; };
 		BEDECF6B1B3581830088C2C8 /* CWXProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWXProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDECF6F1B3581830088C2C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDECF701B3581830088C2C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +71,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE95CD501B3953300015E4ED /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				BE95CD511B3953300015E4ED /* ProgressAnimate */,
+				BE95CD551B3953300015E4ED /* Vendor */,
+				BE95CD581B3953300015E4ED /* WaveView */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		BE95CD511B3953300015E4ED /* ProgressAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				BE95CD521B3953300015E4ED /* CWXProgressView.h */,
+				BE95CD531B3953300015E4ED /* CWXProgressView.m */,
+				BE95CD541B3953300015E4ED /* CWXProgressView.xib */,
+			);
+			path = ProgressAnimate;
+			sourceTree = "<group>";
+		};
+		BE95CD551B3953300015E4ED /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BE95CD561B3953300015E4ED /* UIViewAdditions.h */,
+				BE95CD571B3953300015E4ED /* UIViewAdditions.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		BE95CD581B3953300015E4ED /* WaveView */ = {
+			isa = PBXGroup;
+			children = (
+				BE95CD591B3953300015E4ED /* CWXWaveView.h */,
+				BE95CD5A1B3953300015E4ED /* CWXWaveView.m */,
+			);
+			path = WaveView;
+			sourceTree = "<group>";
+		};
 		BEDECF621B3581830088C2C8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +130,7 @@
 		BEDECF6D1B3581830088C2C8 /* CWXProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				BE95CD501B3953300015E4ED /* Class */,
 				BEDECF721B3581830088C2C8 /* AppDelegate.h */,
 				BEDECF731B3581830088C2C8 /* AppDelegate.m */,
 				BEDECF751B3581830088C2C8 /* ViewController.h */,
@@ -201,6 +251,7 @@
 			files = (
 				BEDECF7A1B3581830088C2C8 /* Main.storyboard in Resources */,
 				BEDECF7F1B3581830088C2C8 /* LaunchScreen.xib in Resources */,
+				BE95CD5C1B3953300015E4ED /* CWXProgressView.xib in Resources */,
 				BEDECF7C1B3581830088C2C8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE95CD5E1B3953300015E4ED /* CWXWaveView.m in Sources */,
 				BEDECF771B3581830088C2C8 /* ViewController.m in Sources */,
+				BE95CD5D1B3953300015E4ED /* UIViewAdditions.m in Sources */,
 				BEDECF741B3581830088C2C8 /* AppDelegate.m in Sources */,
+				BE95CD5B1B3953300015E4ED /* CWXProgressView.m in Sources */,
 				BEDECF711B3581830088C2C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +472,7 @@
 				BEDECF901B3581830088C2C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEDECF911B3581830088C2C8 /* Build configuration list for PBXNativeTarget "CWXProgressViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +481,7 @@
 				BEDECF931B3581830088C2C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
